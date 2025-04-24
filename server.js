@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
+ 
 // POST /addSchool
 app.post('/addSchool', async (req, res) => {
   const { name, address, longitude, latitude } = req.body;
